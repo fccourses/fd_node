@@ -1,11 +1,19 @@
 'use strict';
 // require()
 // Resolving -> Loading -> Wrapping -> Evaluation -> Caching
-// const myMath = require('./myMath');
 const fs = require('fs').promises;
+const myMath = require('./myMath');
+// require('test-package'); // < - Error
+/* 
+  How require works:
 
-fs.readFile('./index.txt', 'utf8').then((content) => {
-  const str = 'Appending STR';
-  const dataToAppend = `Old content:${content}\nNew content:${str}`;
-  fs.appendFile('./newFile.txt', dataToAppend, 'utf8');
-});
+  1) Core modules. (fs, path, http, crypto)
+  2) File
+    2.1) js
+    2.2) json
+  3) Directory
+    3.1) package.json -> "main"
+    3.2) index .js | .json
+  4) node_modules
+  5) throw new Error
+*/

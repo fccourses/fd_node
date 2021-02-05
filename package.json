@@ -2,9 +2,10 @@
   "name": "fd_node",
   "version": "0.0.1",
   "description": "Very first package",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "bugs": {
     "url": "http://github-repo"
@@ -17,5 +18,9 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "webpack": "^5.20.2",
+    "webpack-cli": "^4.5.0"
   }
 }

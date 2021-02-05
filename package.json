@@ -1,0 +1,21 @@
+{
+  "name": "fd_node",
+  "version": "0.0.1",
+  "description": "Very first package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "http://github-repo"
+  },
+  "keywords": [
+    "npm",
+    "node"
+  ],
+  "author": "We",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}

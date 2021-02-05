@@ -5,6 +5,7 @@
 const fs = require('fs').promises;
 
 fs.readFile('./index.txt', 'utf8').then((content) => {
-  console.log(content);
-  console.log(typeof content);
+  const str = 'Appending STR';
+  const dataToAppend = `Old content:${content}\nNew content:${str}`;
+  fs.appendFile('./newFile.txt', dataToAppend, 'utf8');
 });
